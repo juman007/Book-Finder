@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+   scroll-behavior: smooth;
+}
+
+/* Navbar responsive */
+@media (max-width: 972px) {
+   .nav {
+      width: 100% !important;
+   }
+   .nav-search-bar {
+      width: 300px !important;
+   }
+}
+
+@media (max-width: 420px) {
+   .nav-responsive {
+      display: none;
+   }
+   .nav-logo {
+      width: 120px;
+   }
+}
+
+.active {
+   color: red;
+}
+
+/* Hero Section responsive */
+
+@media (max-width: 972px) {
+   .hero-response,
+   .hero-response {
+      width: 100% !important;
+      padding: 0 10px;
+   }
+}
+
+@media (max-width: 768px) {
+   .hero-response {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   .hero-response h1,
+   p {
+      text-align: center;
+   }
+   .hero-img {
+      width: 320px;
+   }
+}
+
+/*  book details page */
+@media (max-width: 1000px) {
+   .book-details {
+      width: 100% !important;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+   .details-box {
+      padding: 12px 3px !important;
+   }
+}
+
+@media (max-width: 940px) {
+   .details-box-main {
+      flex-direction: column !important;
+   }
+}
+
+/*  about us */
+@media (max-width: 1050px) {
+   .about-responsive {
+    width: 100%!important;
+   }
+}
