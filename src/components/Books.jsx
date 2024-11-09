@@ -31,7 +31,7 @@ const Books = () => {
       window.dispatchEvent(new Event("storage"));
    };
 
-   return !loading ? (
+   return loading ? (
       <div className="flex h-[170px] justify-center mt-5">
          <Loader />
       </div>
